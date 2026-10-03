@@ -103,7 +103,7 @@ copy .env.example .env      # then open .env and paste your OpenAI key
 streamlit run app.py
 ```
 
-Open http://localhost:8501 and try the images in `samples/`.
+Streamlit prints the app link in the terminal — open it and try the images in `samples/`.
 
 ## 🐳 Run with Docker
 
@@ -112,7 +112,7 @@ cp .env.example .env        # add your OpenAI key
 docker compose up -d --build
 ```
 
-Open http://localhost:8502 (or `http://YOUR_VPS_IP:8502` on a server). Put it behind Nginx + HTTPS so the phone camera works.
+The app runs inside the container. On a server, put it behind Nginx + HTTPS so the phone camera works.
 
 ---
 
