@@ -1,0 +1,8 @@
+services:
+  medicine-explainer:
+    build: .
+    container_name: medicine-explainer
+    env_file: .env
+    ports:
+      - "8502:8501"   # VPS port 8502 -> container 8501 (8501 may already be used by your RAG app)
+    restart: unless-stopped
